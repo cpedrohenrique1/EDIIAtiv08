@@ -52,6 +52,19 @@ void MainWindow::on_pushButton_gerar_clicked()
         ui->textEdit_insertion_sort->setText(saida_vetor);
         ui->textEdit_insertion_sort_nmr_execucoes->setText(QString::number(conj.getNmrExecucoes()));
         ui->textEdit_insertion_sort_tempo_execucoes->setText(QString::number(duration.count()) + "µs");
+
+        start = std::chrono::high_resolution_clock::now();
+        conj.bubbleSort();
+        finish = std::chrono::high_resolution_clock::now();
+        duration = std::chrono::duration_cast<std::chrono::microseconds>(finish - start);
+        saida_vetor = "";
+        for (int i = 0; i < tamanho_array; ++i){
+            saida_vetor += "|" + QString::number(conj.getVetorBubbleSort()[i]) + "| ";
+        }
+        ui->textEdit_bubble_sort->setText(saida_vetor);
+        ui->textEdit_bubble_sort_nmr_execucoes->setText(QString::number(conj.getNmrExecucoes()));
+        ui->textEdit_bubble_sort_tempo_execucoes->setText(QString::number(duration.count()) + "µs");
+
     }
     catch(QString& e)
     {

@@ -11,6 +11,7 @@ private:
     int *vetor;
     int *vetor_selection_sort;
     int *vetor_insertion_sort;
+    int *vetor_bubble_sort;
     int tamanho_vetor;
     int nmr_execucoes;
 public:
@@ -20,9 +21,11 @@ public:
     int *getVetor() const;
     int* getVetorSelectionSort() const;
     int* getVetorInsertionSort() const;
+    int* getVetorBubbleSort() const;
     int getNmrExecucoes() const;
     void selectionSort();
     void insertionSort();
+    void bubbleSort();
 };
 
 #endif // CONJUNTO_H
