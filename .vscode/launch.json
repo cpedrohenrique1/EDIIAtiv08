@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/puc/EDIIAtiv07",
-      "program": "/home/puc/EDIIAtiv07/build/Debug/outDebug",
+      "cwd": "/home/puc/Documentos/EDIIAtiv08",
+      "program": "/home/puc/Documentos/EDIIAtiv08/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
