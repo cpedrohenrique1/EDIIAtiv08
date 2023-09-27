@@ -100,7 +100,7 @@ void Conjunto::bubbleSort(){
     }
     bool swapped = false;
     for (int i = 0; i < tamanho_vetor - 1; ++i){
-        swapped = true;
+        swapped = false;
         for (int j = 0; j < tamanho_vetor - i - 1; ++j){
             if (vetor_bubble_sort[j] > vetor_bubble_sort[j + 1]){
                 int temp = vetor_bubble_sort[j];
